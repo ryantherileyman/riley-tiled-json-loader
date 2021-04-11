@@ -1,6 +1,7 @@
 
 #include <assert.h>
 #include <iostream>
+#include <math.h>
 #include <json/json.h>
 #include <r3/tiled/r3-tiled-JsonLoader.hpp>
 

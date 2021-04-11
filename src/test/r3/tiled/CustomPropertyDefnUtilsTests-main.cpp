@@ -1,7 +1,8 @@
 
 #include <assert.h>
-#include <stdexcept>
 #include <iostream>
+#include <math.h>
+#include <stdexcept>
 #include <r3/tiled/r3-tiled-defn.hpp>
 
 using namespace r3::tiled;
