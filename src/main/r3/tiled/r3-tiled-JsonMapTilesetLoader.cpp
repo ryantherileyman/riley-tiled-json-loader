@@ -1,4 +1,5 @@
 
+#include <stdio.h>
 #include <r3/jsoncpp/r3-jsoncpp-utils.hpp>
 #include <r3/tiled/r3-tiled-JsonLoader.hpp>
 
