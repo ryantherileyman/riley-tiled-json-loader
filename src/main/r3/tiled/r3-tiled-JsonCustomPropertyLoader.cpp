@@ -118,7 +118,7 @@ namespace r3 {
 
 			std::string localizePropertyListError(int index) {
 				char resultStr[128];
-				sprintf_s(resultStr, "Entry %d within the \"properties\" array is invalid.  Individual error messages follow...", index);
+				snprintf(resultStr, 128, "Entry %d within the \"properties\" array is invalid.  Individual error messages follow...", index);
 
 				std::string result(resultStr);
 				return result;

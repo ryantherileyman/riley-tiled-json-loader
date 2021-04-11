@@ -27,7 +27,7 @@ namespace r3 {
 				assert(strlen(listPropertyName) <= 50);
 
 				char resultStr[128];
-				sprintf_s(resultStr, "Entry %d within the \"%s\" array is invalid.  Individual error messages follow...", index, listPropertyName);
+				snprintf(resultStr, 128, "Entry %d within the \"%s\" array is invalid.  Individual error messages follow...", index, listPropertyName);
 
 				std::string result(resultStr);
 				return result;
