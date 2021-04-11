@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 3.19)
 
 project(RileyTiledJsonLoader VERSION 0.1)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED true)
+
 include(FetchContent)
 
 set(RILEY_CPP_UTILS_WITH_TESTS OFF)
@@ -38,4 +41,11 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(RileyJsonCppUtils)
 
+option(RILEY_TILED_JSON_LOADER_WITH_TESTS "Build and run RileyTiledJsonLoader text executables" ON)
+
 add_subdirectory(src/main/r3/tiled)
+
+if (${RILEY_TILED_JSON_LOADER_WITH_TESTS})
+	enable_testing()
+	add_subdirectory(src/test/r3/tiled)
+endif()
